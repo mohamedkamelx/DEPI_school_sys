@@ -2,15 +2,18 @@ import java.util.*;
 
 public class Course {
 
-    String subjectName ;
+    String subject ;
     int level;
 
 //----------------------------------------------------------------
-    Course (String subjectName, int level, Instructor instructor) {
-        this.subjectName = subjectName;
+    Course (String subject, int level) {
+        this.subject = subject;
         this.level = level;
     }
 //---------------------------------------------------------------------------
 
-
+    @Override
+    public String toString(){
+        return "subject name: "+this.subject;
+    }
 }

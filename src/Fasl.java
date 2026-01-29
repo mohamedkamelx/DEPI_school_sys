@@ -1,28 +1,23 @@
 import java.util.ArrayList;
 
 public class Fasl {
-
-
-
-        Course subjectName ;
+        String name;
+        Course subject ;
         int level;
 
         Instructor instructor;
         ArrayList<Student> stuList=new ArrayList<>();
         //----------------------------------------------------------------
-        Fasl (Course subjectName, int level, Instructor instructor) {
-            this.subjectName = subjectName;
+        Fasl (String name, Course subject, int level, Instructor instructor) {
+            this.subject = subject;
             this.level = level;
             this.instructor = instructor;
-
-
+            this.name=name;
         }
 //---------------------------------------------------------------------------
 
         void addStudent(Student student){
-
             this.stuList.add(student);
-
         }
 
 
@@ -32,13 +27,7 @@ public class Fasl {
                     stuList.remove(i);
                     return;
                 }
-
             }
             System.out.println("not found");
         }
-
-
-
     }
-
-
