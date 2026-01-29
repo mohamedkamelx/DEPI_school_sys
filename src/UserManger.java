@@ -64,19 +64,27 @@ public class UserManger {
 System.out.println("--------------------------------------------");
 System.out.println("All Students");
 System.out.println("--------------------------------------------");
+if (studentsDatabase.size()!=0){
         for(int i =0; i<studentsDatabase.size();i++){
             System.out.println((i+1)+"- "+studentsDatabase.get(i));
             System.out.println("--------------------------------------------");
+        }}else{
+            System.out.println("empty");
         }
+        System.out.println("--------------------------------------------");
     }
     public static void previewInstructors(){
         System.out.println("--------------------------------------------");
         System.out.println("All instructors");
         System.out.println("--------------------------------------------");
+        if (instructorDatabase.size()!=0){
         for(int i =0; i<instructorDatabase.size();i++){
             System.out.println((i+1)+"- "+instructorDatabase.get(i));
             System.out.println("--------------------------------------------");
+        }}else{
+            System.out.println("empty");
         }
+        System.out.println("--------------------------------------------");
         
     }
     public static void removeStudent(){

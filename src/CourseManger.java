@@ -12,10 +12,14 @@ public class CourseManger {
         System.out.println("--------------------------------------------");
         System.out.println("available courses");
         System.out.println("--------------------------------------------");
+        if (courseDatabse.size()!=0){
         for(int i=0;i<courseDatabse.size();i++){
             System.out.println((i+1)+"- "+courseDatabse.get(i).subject);
             System.out.println("--------------------------------------------");
+        }}else{
+            System.out.println("empty");
         }
+        System.out.println("--------------------------------------------");
         
     }
 
@@ -23,11 +27,15 @@ public class CourseManger {
         System.out.println("--------------------------------------------");
         System.out.println("available classes");
         System.out.println("--------------------------------------------");
+        if (faslDatabse.size()!=0){
         for(int i=0;i<faslDatabse.size();i++){
             
             System.out.println((i+1)+"- "+"name: "+faslDatabse.get(i).name+"\nlevel: "+faslDatabse.get(i).level+"\nsubject: "+faslDatabse.get(i).subject);
             System.out.println("--------------------------------------------");
+        }}else{
+            System.out.println("empty");
         }
+        System.out.println("--------------------------------------------");
     }
 
     public static Course createCourse(){
